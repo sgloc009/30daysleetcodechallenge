@@ -9,9 +9,7 @@ class Solution:
             return(nums[0])
         pivot = len(nums)//2
         lhs = self.recursiveBS(nums[:pivot])
-        print(lhs)
         rhs = self.recursiveBS(nums[pivot:])
-        print(rhs)
         if(lhs>nums[pivot] and nums[pivot]<rhs):
             return nums[pivot]
         elif(lhs>rhs):
